@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CBD5D4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/austriaFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/margin_16"
+        android:scaleType="centerCrop"
+        android:src="@drawable/austria"
+        app:layout_constraintBottom_toTopOf="@+id/polandFlag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/austria"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/austriaFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/austriaFlag"
+        app:layout_constraintTop_toTopOf="@+id/austriaFlag" />
+
+    <ImageView
+        android:id="@+id/polandFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/poland"
+        app:layout_constraintBottom_toTopOf="@+id/italyFlag"
+        app:layout_constraintEnd_toEndOf="@+id/austriaFlag"
+        app:layout_constraintStart_toStartOf="@+id/austriaFlag"
+        app:layout_constraintTop_toBottomOf="@+id/austriaFlag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/poland"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/polandFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/polandFlag"
+        app:layout_constraintTop_toTopOf="@+id/polandFlag" />
+
+    <ImageView
+        android:id="@+id/italyFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/italy"
+        app:layout_constraintBottom_toTopOf="@+id/colombiaFlag"
+        app:layout_constraintEnd_toEndOf="@+id/polandFlag"
+        app:layout_constraintStart_toStartOf="@+id/polandFlag"
+        app:layout_constraintTop_toBottomOf="@+id/polandFlag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/italy"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/italyFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/italyFlag"
+        app:layout_constraintTop_toTopOf="@+id/italyFlag" />
+
+    <ImageView
+        android:id="@+id/colombiaFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/colombia"
+        app:layout_constraintBottom_toTopOf="@+id/madagascarFlag"
+        app:layout_constraintEnd_toEndOf="@+id/italyFlag"
+        app:layout_constraintStart_toStartOf="@+id/italyFlag"
+        app:layout_constraintTop_toBottomOf="@+id/italyFlag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/colombia"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/colombiaFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/colombiaFlag"
+        app:layout_constraintTop_toTopOf="@+id/colombiaFlag" />
+
+    <ImageView
+        android:id="@+id/madagascarFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/madagascar"
+        app:layout_constraintBottom_toTopOf="@+id/thailandFlag"
+        app:layout_constraintEnd_toEndOf="@+id/colombiaFlag"
+        app:layout_constraintStart_toStartOf="@+id/colombiaFlag"
+        app:layout_constraintTop_toBottomOf="@+id/colombiaFlag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/madagascar"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/madagascarFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/madagascarFlag"
+        app:layout_constraintTop_toTopOf="@+id/madagascarFlag" />
+
+    <ImageView
+        android:id="@+id/thailandFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/thailand"
+        app:layout_constraintBottom_toTopOf="@+id/switzerlandFlag"
+        app:layout_constraintEnd_toEndOf="@+id/madagascarFlag"
+        app:layout_constraintStart_toStartOf="@+id/madagascarFlag"
+        app:layout_constraintTop_toBottomOf="@+id/madagascarFlag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/thailand"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thailandFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/thailandFlag"
+        app:layout_constraintTop_toTopOf="@+id/thailandFlag" />
+
+    <ImageView
+        android:id="@+id/switzerlandFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/switzerland"
+        app:layout_constraintBottom_toTopOf="@+id/denmarkFlag"
+        app:layout_constraintEnd_toEndOf="@+id/thailandFlag"
+        app:layout_constraintStart_toStartOf="@+id/thailandFlag"
+        app:layout_constraintTop_toBottomOf="@+id/thailandFlag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/switzerland"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/switzerlandFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/switzerlandFlag"
+        app:layout_constraintTop_toTopOf="@+id/switzerlandFlag" />
+
+    <ImageView
+        android:id="@+id/denmarkFlag"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/denmark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/switzerlandFlag"
+        app:layout_constraintStart_toStartOf="@+id/switzerlandFlag"
+        app:layout_constraintTop_toBottomOf="@+id/switzerlandFlag" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16"
+        android:text="@string/denmark"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/denmarkFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/denmarkFlag"
+        app:layout_constraintTop_toTopOf="@+id/denmarkFlag" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
