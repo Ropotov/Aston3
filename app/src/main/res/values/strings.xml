@@ -8,4 +8,7 @@
     <string name="thailand">Thailand</string>
     <string name="switzerland">Switzerland</string>
     <string name="denmark">Denmark</string>
+    <string name="glide">Glide</string>
+    <string name="no_glide">No Glide</string>
+    <string name="url">https://picsum.photos/id/1/200/300</string>
 </resources>
